@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 1,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -1.0, 320.0, 1106.0, 481.0 ],
+		"rect" : [ 563.0, 320.0, 1346.0, 846.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,11 +38,115 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-18",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 448.0, 190.259766, 162.0, 114.0 ],
+					"presentation_rect" : [ 465.0, 205.259766, 0.0, 0.0 ],
+					"style" : "",
+					"text" : " add 1 of these for each module this will name your send~ and receive~ objects so that routing is standized. Please open up asc.delay-flange for and example of exactly how this works"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1043.0, 117.759766, 150.0, 47.0 ],
+					"presentation_rect" : [ 1070.0, 123.5, 0.0, 0.0 ],
+					"style" : "",
+					"text" : " add 1 of these for each module. This will create a list of total recieve options"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 616.0, 46.5, 150.0, 33.0 ],
+					"style" : "",
+					"text" : " add 1 of these for every gui element"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-65",
+					"maxclass" : "newobj",
+					"numinlets" : 4,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 861.0, 123.259766, 163.0, 22.0 ],
+					"style" : "",
+					"text" : "asc-moduleattributelist delay"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 448.0, 163.759766, 183.0, 22.0 ],
+					"style" : "",
+					"text" : "asc-routinginstancename2 delay"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-109",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 457.5, 52.0, 144.0, 22.0 ],
+					"style" : "",
+					"text" : "asc_recieve _delay _lvlin"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "panel",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 17.0, 311.259766, 1204.0, 4.0 ],
+					"presentation_rect" : [ 130.0, 86.5, 0.0, 0.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "panel",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 46.0, 361.5, 6.0, 429.0 ],
+					"presentation_rect" : [ 16.0, 17.0, 0.0, 0.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 679.0, 354.5, 329.0, 4.0 ],
+					"patching_rect" : [ 714.0, 672.5, 329.0, 4.0 ],
 					"style" : ""
 				}
 
@@ -53,7 +157,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 650.5, 104.5, 329.0, 4.0 ],
+					"patching_rect" : [ 685.5, 422.5, 329.0, 4.0 ],
 					"style" : ""
 				}
 
@@ -64,7 +168,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 298.0, 276.759766, 77.0, 20.0 ],
+					"patching_rect" : [ 333.0, 594.759766, 77.0, 20.0 ],
 					"style" : "",
 					"text" : "list of sends"
 				}
@@ -76,7 +180,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 826.0, 43.5, 181.0, 20.0 ],
+					"patching_rect" : [ 861.0, 361.5, 181.0, 20.0 ],
 					"style" : "",
 					"text" : "controller Saver"
 				}
@@ -89,7 +193,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 807.0, 43.5, 17.0, 17.0 ],
+					"patching_rect" : [ 842.0, 361.5, 17.0, 17.0 ],
 					"style" : ""
 				}
 
@@ -100,7 +204,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 616.0, 77.0, 226.0, 20.0 ],
+					"patching_rect" : [ 651.0, 395.0, 226.0, 20.0 ],
 					"style" : "",
 					"text" : "GUI object goes in bpatchersomewhere"
 				}
@@ -113,7 +217,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 852.5, 71.5, 135.0, 22.0 ],
+					"patching_rect" : [ 887.5, 389.5, 135.0, 22.0 ],
 					"style" : "",
 					"text" : "s datarouterchoicesave"
 				}
@@ -125,7 +229,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 402.0, 316.759766, 73.0, 22.0 ],
+					"patching_rect" : [ 437.0, 634.759766, 73.0, 22.0 ],
 					"style" : "",
 					"text" : "s todatabus"
 				}
@@ -138,7 +242,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 918.0, 454.0, 150.0, 33.0 ],
+					"patching_rect" : [ 953.0, 772.0, 150.0, 33.0 ],
 					"style" : "",
 					"text" : "connect 2nd oulet to gui object"
 				}
@@ -150,7 +254,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 729.0, 19.0, 150.0, 20.0 ],
+					"patching_rect" : [ 764.0, 337.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "TO OBJECT"
 				}
@@ -163,7 +267,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 185.5, 58.0, 150.0, 33.0 ],
+					"patching_rect" : [ 220.5, 376.0, 150.0, 33.0 ],
 					"style" : "",
 					"text" : "FROM OBJECT put in controller"
 				}
@@ -175,7 +279,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 581.0, 28.0, 6.0, 429.0 ],
+					"patching_rect" : [ 616.0, 346.0, 6.0, 429.0 ],
 					"style" : ""
 				}
 
@@ -188,7 +292,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 988.0, 198.5, 20.0, 136.759766 ],
+					"patching_rect" : [ 1023.0, 516.5, 20.0, 136.759766 ],
 					"style" : ""
 				}
 
@@ -199,7 +303,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 982.0, 121.0, 150.0, 20.0 ],
+					"patching_rect" : [ 1017.0, 439.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "put in patcher -- gain~"
 				}
@@ -212,7 +316,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 988.0, 150.259766, 94.0, 22.0 ],
+					"patching_rect" : [ 1023.0, 468.259766, 94.0, 22.0 ],
 					"style" : "",
 					"text" : "asc-datarouter"
 				}
@@ -228,7 +332,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 988.0, 177.259766, 20.0, 22.0 ],
+					"patching_rect" : [ 1023.0, 495.259766, 20.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -239,7 +343,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 803.0, 121.0, 150.0, 20.0 ],
+					"patching_rect" : [ 838.0, 439.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "put in patcher -- slider"
 				}
@@ -253,7 +357,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 809.0, 199.259766, 20.0, 140.0 ],
+					"patching_rect" : [ 844.0, 517.259766, 20.0, 140.0 ],
 					"style" : ""
 				}
 
@@ -265,7 +369,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 809.0, 150.259766, 94.0, 22.0 ],
+					"patching_rect" : [ 844.0, 468.259766, 94.0, 22.0 ],
 					"style" : "",
 					"text" : "asc-datarouter"
 				}
@@ -281,7 +385,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 809.0, 177.259766, 20.0, 22.0 ],
+					"patching_rect" : [ 844.0, 495.259766, 20.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -295,7 +399,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 657.0, 177.259766, 50.0, 22.0 ],
+					"patching_rect" : [ 692.0, 495.259766, 50.0, 22.0 ],
 					"style" : "",
 					"triangle" : 0
 				}
@@ -307,7 +411,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 621.0, 121.0, 150.0, 20.0 ],
+					"patching_rect" : [ 656.0, 439.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "put in patcher -- Float/int"
 				}
@@ -320,7 +424,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 640.0, 150.259766, 94.0, 22.0 ],
+					"patching_rect" : [ 675.0, 468.259766, 94.0, 22.0 ],
 					"style" : "",
 					"text" : "asc-datarouter"
 				}
@@ -336,7 +440,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 640.0, 177.259766, 18.0, 22.0 ],
+					"patching_rect" : [ 675.0, 495.259766, 18.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -351,8 +455,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -476,7 +580,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 86.0, 659.0, 70.0, 22.0 ],
+					"patching_rect" : [ 493.0, 749.0, 70.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -496,7 +600,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 354.5, 342.259766, 245.5, 20.0 ],
+					"patching_rect" : [ 389.5, 660.259766, 245.5, 20.0 ],
 					"style" : "",
 					"text" : "needs to go on each side of variables"
 				}
@@ -509,7 +613,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 304.5, 150.259766, 247.5, 47.0 ],
+					"patching_rect" : [ 339.5, 468.259766, 247.5, 47.0 ],
 					"style" : "",
 					"text" : "needs to go on each side of variables in send patcher ---- so from keyboard for example"
 				}
@@ -521,7 +625,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 39.0, 129.259766, 181.0, 20.0 ],
+					"patching_rect" : [ 74.0, 447.259766, 181.0, 20.0 ],
 					"style" : "",
 					"text" : "bang for each object-in inits"
 				}
@@ -534,7 +638,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 807.0, 375.0, 150.0, 33.0 ],
+					"patching_rect" : [ 842.0, 693.0, 150.0, 33.0 ],
 					"style" : "",
 					"text" : "put in patcher --general to get data---"
 				}
@@ -547,7 +651,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 865.5, 416.259766, 94.0, 22.0 ],
+					"patching_rect" : [ 900.5, 734.259766, 94.0, 22.0 ],
 					"style" : "",
 					"text" : "asc-datarouter"
 				}
@@ -563,7 +667,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 787.0, 416.259766, 18.0, 22.0 ],
+					"patching_rect" : [ 822.0, 734.259766, 18.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -575,7 +679,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 381.75, 276.759766, 93.0, 22.0 ],
+					"patching_rect" : [ 416.75, 594.759766, 93.0, 22.0 ],
 					"style" : "",
 					"text" : "1234delay_dog"
 				}
@@ -588,7 +692,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 375.75, 217.759766, 92.0, 22.0 ],
+					"patching_rect" : [ 410.75, 535.759766, 92.0, 22.0 ],
 					"style" : "",
 					"text" : "r datalistsearch"
 				}
@@ -601,7 +705,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 98.0, 166.5, 24.0, 24.0 ],
+					"patching_rect" : [ 133.0, 484.5, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -612,7 +716,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 89.0, 206.259766, 114.0, 22.0 ],
+					"patching_rect" : [ 124.0, 524.259766, 114.0, 22.0 ],
 					"style" : "",
 					"text" : "send datalistsearch"
 				}
@@ -620,6 +724,42 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-65", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-109", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-65", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-109", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-65", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-28", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-65", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-97", 0 ],
 					"disabled" : 0,
@@ -757,13 +897,61 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "asc-datarouter.maxpat",
-				"bootpath" : "~/Documents/ComputerMusicPatches/Max/asc.tools_master/asc.tools/asc.support",
-				"patcherrelativepath" : "../asc.support",
+				"bootpath" : "~/Google Drive/asc.tools_master/asc.tools/asc.support",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "asc_recieve.maxpat",
+				"bootpath" : "~/Google Drive/asc.tools_master/asc.tools/asc.support",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "asc-routinginstancename2.maxpat",
+				"bootpath" : "~/Google Drive/asc.tools_master/asc.tools/asc.support",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "asc.simpleinstancename.maxpat",
+				"bootpath" : "~/Google Drive/asc.tools_master/asc.tools/asc.support",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "asc-instancenamer.maxpat",
+				"bootpath" : "~/Google Drive/asc.tools_master/asc.tools/asc.support",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "asc-moduleattributelist.maxpat",
+				"bootpath" : "~/Google Drive/asc.tools_master/asc.tools/asc.support/asc-gui-router",
 				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
-		"embedsnapshot" : 0
+		"autosave" : 0,
+		"styles" : [ 			{
+				"name" : "AudioStatus_Menu",
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+ ]
 	}
 
 }

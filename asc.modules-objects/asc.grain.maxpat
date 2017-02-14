@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 451.0, 373.0, 212.0, 160.0 ],
+		"rect" : [ 451.0, 373.0, 1938.0, 575.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -39,6 +39,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-17",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 397.0, 5.0, 150.0, 33.0 ],
+					"style" : "",
+					"text" : "This is a gui for munger~ from percolate"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -46,7 +59,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1129.0, 198.0, 93.0, 22.0 ],
 					"style" : "",
-					"text" : "v_grain2_gsize"
+					"text" : "v_grain1_gsize"
 				}
 
 			}
@@ -1457,7 +1470,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 453.0, 375.0, 210.0, 155.0 ],
+						"rect" : [ 463.0, 470.0, 210.0, 155.0 ],
 						"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
@@ -2200,6 +2213,53 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-6" : [ "live.gain~[10]", "live.gain~", 0 ],
+			"obj-4" : [ "live.gain~[13]", "live.gain~", 0 ]
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "asc.bpatcherresize.js",
+				"bootpath" : "~/Google Drive/asc.tools_master/asc.tools/asc.javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "asc_recieve.maxpat",
+				"bootpath" : "~/Google Drive/asc.tools_master/asc.tools/asc.support",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "asc-routinginstancename.maxpat",
+				"bootpath" : "~/Google Drive/asc.tools_master/asc.tools/asc.support",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "asc.simpleinstancename.maxpat",
+				"bootpath" : "~/Google Drive/asc.tools_master/asc.tools/asc.support",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "asc-instancenamer.maxpat",
+				"bootpath" : "~/Google Drive/asc.tools_master/asc.tools/asc.support",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "asc-moduleattributelist.maxpat",
+				"bootpath" : "~/Google Drive/asc.tools_master/asc.tools/asc.support/asc-gui-router",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "munger~.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
