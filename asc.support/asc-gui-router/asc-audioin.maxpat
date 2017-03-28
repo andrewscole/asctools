@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 130.0, 350.0, 571.0, 275.0 ],
+		"rect" : [ 212.0, 248.0, 35.0, 165.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-5",
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 176.0, 281.0, 30.0, 30.0 ],
+					"presentation_rect" : [ 176.0, 279.0, 0.0, 0.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 11.595187,
@@ -241,7 +254,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 139.0, 375.0, 34.0, 162.0 ],
+						"rect" : [ 212.0, 249.0, 34.0, 162.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -309,6 +322,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 1,
+					"source" : [ "obj-14", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-82", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -371,24 +393,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-14" : [ "live.gain~[1]", "live.gain~[27]", 0 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "asc-datarouter.maxpat",
-				"bootpath" : "~/Google Drive/asc.tools_master/asc.tools/asc.support",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "asc.bpatcherresize.js",
-				"bootpath" : "~/Google Drive/asc.tools_master/asc.tools/asc.javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
