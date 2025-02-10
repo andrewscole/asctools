@@ -23,11 +23,13 @@ for saxophone quartet and 4 channel interactive electronics.
 [All My Dreams Have Turned to Ash](https://soundcloud.com/andrew-cole-4/all-my-dreams-have-turned-to-ash) by Andrew Cole <br>
 for violin, saxophone, trombone guitar, percussion, and 8 channel interactive electronics.
 
-[Trantrums](https://www.youtube.com/watch?v=LqPOZeaBIRA) by Asha Srinivasan<br>
+[Tantrums](https://www.youtube.com/watch?v=LqPOZeaBIRA) by Asha Srinivasan<br>
 for saxophone, percussions, 2 or 8 channel interactive electronics.
 
 Here is an example of what it looks like and how it can be used in a composition. Aro dreamscape uses a mix of these tools loaded dynamically and for the purposes of the composition I also have "hardwired" presets. For this library, the connections for each module are automatically created and added to a router so that routing can quickly be changed to speed composition and electroncis creation. 
+Tantrums guid:
+![Model](docs/tantrums.png)
+
 
 Aro Dreamscape gui:
-
 ![Model](docs/AroDreamscape.png)
